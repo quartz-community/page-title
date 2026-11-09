@@ -1,18 +1,20 @@
 # @quartz-community/page-title
 
-Renders the site-wide page title as a link to the home page.
+Renders the site-wide page title (the `pageTitle` field in `quartz.config.yaml`) as a link to the home page.
 
 ## Installation
 
 ```bash
-npx quartz plugin add github:quartz-community/page-title
+npx quartz plugin add @quartz-community/page-title
 ```
+
+The page title is already in Quartz's default configuration.
 
 ## Usage
 
 ```yaml title="quartz.config.yaml"
 plugins:
-  - source: github:quartz-community/page-title
+  - source: "@quartz-community/page-title"
     enabled: true
     layout:
       position: left
@@ -21,7 +23,7 @@ plugins:
 
 ## Configuration
 
-This plugin has no configuration options.
+This plugin has no configuration options. The displayed title is controlled by the `pageTitle` field in `quartz.config.yaml`.
 
 ## Documentation
 
